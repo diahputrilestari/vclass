@@ -1476,52 +1476,6 @@ h1.intro-header::before {
   vertical-align: bottom;
   width: 75%;
 }
-
-
-/* home social-list */
-
-.home-social-list {
-  position: absolute;
-  right: 42px;
-  top: 50%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 2.2rem;
-  line-height: 1.75;
-  text-align: center;
-  -webkit-transform: translateY(-55%);
-  -ms-transform: translateY(-55%);
-  transform: translateY(-55%);
-}
-
-.home-social-list::before {
-  display: block;
-  content: "";
-  width: 2px;
-  height: 42px;
-  background-color: rgba(255, 255, 255, 0.15);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 12px;
-}
-
-.home-social-list li {
-  padding-left: 0;
-}
-
-.home-social-list li a,
-.home-social-list li a:visited {
-  color: #FFFFFF;
-}
-
-.home-social-list li a:hover,
-.home-social-list li a:focus,
-.home-social-list li a:active {
-  color: #44c455;
-}
-
-
 /* scroll down */
 
 .home-scrolldown {
@@ -1754,17 +1708,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     min-width: 0;
     max-width: 280px;
   }
-  .home-social-list {
-    font-size: 2rem;
-    right: 30px;
-  }
   .scroll-icon {
     top: 21px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .home-social-list,
+
   .home-scrolldown {
     display: none;
   }
@@ -2524,7 +2474,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * ------------------------------------------------------------------- */
 
 footer {
-  /* padding-top: 9rem; */
+  background-color: #000;
+  padding-top: 0.2rem;
   padding-bottom: 4.2rem;
   font-size: 1.5rem;
   line-height: 2.7rem;
@@ -2589,21 +2540,6 @@ footer ul a:visited {
   color: transparent;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-.footer-social-list {
-  font-size: 1.8rem;
-  margin-top: -1.5rem;
-  margin-bottom: 3rem;
-}
-
-.footer-social-list li {
-  display: inline-block;
-  margin-right: 8px;
-}
-
-.footer-social-list li:last-child {
-  margin-right: 0;
 }
 
 .footer-site-links .list-links {
